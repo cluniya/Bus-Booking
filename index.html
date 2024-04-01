@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Bus Booking</h1>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone">
+
+    <label for="bus-options">Bus Options:</label>
+    <select id="bus-options">
+    <option value="bus1">Bus 1</option>
+    <option value="bus2">Bus 2</option>
+    <option value="bus3">Bus 3</option>
+  </select>
+
+    <button onclick="bookBus()">Book Bus</button>
+
+    <hr>
+
+    <h2>Filter by Bus Options</h2>
+    <select id="filter-options" onchange="filterByBus()">
+    <option value="all">All Buses</option>
+    <option value="bus1">Bus 1</option>
+    <option value="bus2">Bus 2</option>
+    <option value="bus3">Bus 3</option>
+  </select>
+
+    <ul id="user-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
